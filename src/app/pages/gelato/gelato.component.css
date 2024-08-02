@@ -1,0 +1,167 @@
+.gelato{
+    margin: 100px;
+    margin-bottom: 200px;
+}
+.gelato h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+.gelato .all{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+}
+.gelato .item{
+    padding: 20px;
+}
+.gelato .item img{
+    width: 100%;
+}
+.gelato .item a{
+    text-decoration: none;
+    color: var(--main-color);
+    display: block;
+    margin-top: 10px;
+}
+.gelato .item .desc{
+    font-size: 20px;
+}
+.gelato .item .desc:hover{
+    text-decoration: underline;
+}
+.gelato .item .price{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.gelato .view{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.gelato .view:hover{
+    background-color: var(--whenHover);
+}
+
+/* End of Gelato */
+.collections{
+    margin: 100px;
+}
+.collections h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+.collections .all{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
+}
+.collections .item{
+    padding: 20px;
+    position: relative;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.collections .item img{
+    width: 100%;
+}
+.collections .item h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.collections .item:hover{
+    opacity: 0.4;
+    
+}
+/* End of collections */
+@media (max-width: 1200px) {
+    .gelato .all,
+   
+    .collections .all
+     {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gelato .view
+     {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}@media (max-width: 768px) {
+    
+
+   
+
+    .gelato .all,
+    
+    .collections .all
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .gelato .view
+    {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .chocolate .baker {
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px) {
+  
+
+    .gelato h2,
+    
+   
+    .chocolate h2 {
+        font-size: 24px;
+    }
+
+    .gelato .item .desc,
+    
+    .chocolate .item a {
+        font-size: 16px;
+    }
+
+    .gelato .item .price
+    {
+        font-size: 20px;
+    }
+
+    .gelato .view
+  {
+        padding: 10px;
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .chocolate .baker p {
+        font-size: 16px;
+    }
+
+    .chocolate .baker a {
+        padding: 15px;
+        width: 200px;
+        font-size: 16px;
+    }}

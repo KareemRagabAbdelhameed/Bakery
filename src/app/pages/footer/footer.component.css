@@ -1,0 +1,130 @@
+footer .register{
+    text-align: center;
+    background-color: #8a15380d;
+  }
+  footer .register .message{
+    font-size: 20px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding: 50px 0;
+  }
+  footer .register .input{
+    display: flex;
+    justify-content: center;
+  }
+  footer .register .input .mail{
+    width: 50%;
+    height: 8vh;
+    padding: 20px;
+    font-size: 15px;
+    margin-bottom: 60px;
+    border: 2px solid var(--main-color);
+  }
+  footer .register .input .submit{
+    width: 180px;
+    height: 8vh;
+    font-size: 20px;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    color: white;
+    transition: 0.5s;
+  }
+  footer .register .input .submit:hover{
+    background-color: var(--whenHover);
+  }
+
+  footer .links{
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px 60px 40px;
+    
+  }
+  footer .links .first{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  footer .links p{
+    font-size: 15px;
+    align-items: start;
+  }
+  .call .phone{
+    display: flex;
+    align-items: center;
+  }
+  footer .links ul{
+    list-style-type: none;
+  }
+  footer .links a{
+    display: inline-block;
+    color: white;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  footer .quick-links a{
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  footer .quick-links a:hover{
+    text-decoration: underline;
+  }
+
+  footer .media{
+    text-align: center;
+    font-size: 30px;
+  }
+  footer .media i{
+    margin: 10px;
+  }
+  /* End of Footer */
+
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    footer .links .first {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    footer .register .input .mail,
+    footer .register .input .submit {
+        width: 95%; 
+    }
+
+    footer .links .first {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    footer .links a {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 576px) {
+    footer .register .message {
+        font-size: 18px; 
+    }
+
+    footer .register .input .mail,
+    footer .register .input .submit {
+        width: 100%; 
+        height: 7vh; 
+    }
+
+    footer .links .first {
+        grid-template-columns: 1fr; 
+    }
+
+    footer .links a {
+        font-size: 12px; 
+        padding: 0 10px; 
+    }
+
+    footer .media {
+        font-size: 24px; 
+    }
+}
+  
